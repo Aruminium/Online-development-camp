@@ -1,7 +1,7 @@
 <template>
   <header>
   <div>
-      <div class="title">友達と&to do</div>
+      <div class="title">友達とto do</div>
       <nav>
           <nuxt-link to="/">Home</nuxt-link>
           <nuxt-link to="/about">About</nuxt-link>
