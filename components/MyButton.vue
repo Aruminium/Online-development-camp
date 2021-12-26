@@ -1,5 +1,5 @@
 <template>
-  <a>ボタン</a>
+  <a class="MyButton" :style="{'background-color': back_color, color: fore_color}">ホームに戻る</a>
 </template>
 
 <script>
@@ -26,5 +26,16 @@ export default {
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
+  position:absolute;
+  left:150px;
+  right:150px;
+  bottom: 50px;
+  margin: auto;
+  text-align:center;
+
+
+  
+  
+
 }
 </style>
