@@ -14,11 +14,19 @@ const createStore = () => {
       
       addTodoFromMutations(state, todo) {
         state.todos.push(todo);
-      }
+      },
+      deleteTodo(state, index) {
+
+        state.todos.splice(index, 1);
+      },
     },
     actions: {
       addTodoFromActions({ commit }, todoInput) {
         commit("addTodoFromMutations", todoInput);
+      },
+
+      deleteTodo({ commit }, todoIndex) {
+        commit('deleteTodo', todoIndex)
       }
     }
   });

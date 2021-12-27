@@ -1,3 +1,3 @@
 <template>
-     <nuxt-link to="/TodoList">todoList</nuxt-link>
+<nuxt-link to="/Room">Room</nuxt-link>
 </template>

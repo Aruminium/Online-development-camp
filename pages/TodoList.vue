@@ -6,6 +6,9 @@
         <ul>
           <li v-for="(todo,todoList) in getTodos" :key="todoList">
            {{todo}}
+           <button @click="deleteTodo(todoList)">
+           削除する
+          </button>
           </li>        
         </ul>
         
@@ -35,6 +38,9 @@ export default {
       this.$store.dispatch("addTodoFromActions", this.todoInput);
       this.todoInput ="";
     },
+    deleteTodo(todoList) {
+      this.$store.dispatch("deleteTodo", todoList);
+    }
   },
 
   computed: {
