@@ -209,7 +209,7 @@
                                     <li class="list-group-item">
                                         <div class="row text-center align-items-center no-gutters">
                                             <div class="col me-2">
-                                                <h6 class="mb-0"><strong>user</strong></h6>
+                                                <h6 class="mb-0"><strong>userId:123</strong></h6>
                                             </div>
                                             <div class="col me-2">
                                                 <h6 class="mb-0"><strong>hoge</strong></h6>
@@ -219,7 +219,7 @@
                                     <li class="list-group-item">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col text-center me-2">
-                                                <h6 class="mb-0"><strong>user</strong></h6>
+                                                <h6 class="mb-0"><strong>userId:456</strong></h6>
                                             </div>
                                             <div class="col text-center me-2">
                                                 <h6 class="mb-0"><strong>piyo</strong></h6>
@@ -229,7 +229,7 @@
                                     <li class="list-group-item">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col text-center me-2">
-                                                <h6 class="mb-0">user</h6>
+                                                <h6 class="mb-0"><strong>userId:789</strong></h6>
                                             </div>
                                             <div class="col text-center me-2">
                                                 <h6 class="mb-0"><strong>mh</strong></h6>
