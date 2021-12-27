@@ -1,3 +1,3 @@
 <template>
-<nuxt-link to="/Room">Room</nuxt-link>
+<nuxt-link to="/login">login</nuxt-link>
 </template>
