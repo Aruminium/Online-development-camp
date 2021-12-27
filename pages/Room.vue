@@ -137,41 +137,28 @@
                     <div class="row">
                         <div class="col-lg-6 mb-4">
                             <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="text-primary fw-bold m-0">Todo List</h6>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li  class="list-group-item">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col me-2">
-                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">10:30 AM</span>
+                                <form @submit.prevent="addTodoFromPage">
+                                    <div class="card-header py-3">
+                                        <h6 for="inputTodo" class="text-primary fw-bold m-0">Todo List</h6>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li v-for="(todo,todoList) in getTodos" :key="todoList" class="list-group-item">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col me-2">
+                                                    <h6 class="mb-0"><strong>{{todo}}</strong></h6><span class="text-xs">10:30 AM</span>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1"></label></div>
+                                                    <button @click="deleteTodo(todoList)">
+                                                        削除する
+                                                    </button>
+                                                </div>
                                             </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1"></label></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col me-2">
-                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">11:30 AM</span>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2"></label></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col me-2">
-                                                <h6 class="mb-0"><strong>Lunch meeting</strong></h6><span class="text-xs">12:30 AM</span>
-                                            </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3"></label></div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                    <input v-model="todoInput" type="text" class="form-control" id="inputTodo" placeholder="TODOを入力..." />
+                                    <button type="submit" class=" col-6 offset-3 btn btn-primary btn-block">TODOを追加する</button>
+                                </form>
                             </div>
                             <div class="card shadow mb-4" style="width: 504.667px;height: 301.667px;">
                                 <div class="card-header py-3">
@@ -222,6 +209,26 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  data() {
+    return {
+      todoInput: ""
+    };
+  },
+
+  methods: {
+    addTodoFromPage() {
+      this.$store.dispatch("addTodoFromActions", this.todoInput);
+      this.todoInput ="";
+    },
+    deleteTodo(todoList) {
+      this.$store.dispatch("deleteTodo", todoList);
+    }
+  },
+
+  computed: {
+    getTodos() {
+    return this.$store.getters.getTodos;
+    }
+  }
 }
 </script>
