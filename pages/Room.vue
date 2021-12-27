@@ -8,7 +8,7 @@
                 </nuxt-link>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><nuxt-link to="/" class="nav-link active"><i class="fas fa-tachometer-alt"></i><span>Room</span></nuxt-link></li>
+                    <li class="nav-item"><nuxt-link to="/Room" class="nav-link active"><i class="fas fa-tachometer-alt"></i><span>Room</span></nuxt-link></li>
                     <li class="nav-item"><nuxt-link to="/profile" class="nav-link" ><i class="fas fa-user"></i><span>Profile</span></nuxt-link></li>
                     <li class="nav-item"><nuxt-link to="/table" class="nav-link" ><i class="fas fa-table"></i><span>Table</span></nuxt-link></li>
                     <li class="nav-item"><nuxt-link to="/login" class="nav-link" ><i class="far fa-user-circle"></i><span>Login</span></nuxt-link></li>
