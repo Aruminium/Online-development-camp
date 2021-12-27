@@ -136,6 +136,47 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 mb-4">
+                            <div class="card shadow mb-4" >
+                                <div class="card-header py-3">
+                                    <h6 class="text-primary fw-bold m-0">Ranking</h6>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row text-center align-items-center no-gutters">
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>1位</strong></h6>
+                                            </div>
+                                            <div class="col me-2">
+                                                <h6 class="mb-0"><strong>hoge</strong></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col text-center me-2">
+                                                <h6 class="mb-0"><strong>2位</strong></h6>
+                                            </div>
+                                            <div class="col text-center me-2">
+                                                <h6 class="mb-0"><strong>piyo</strong></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row align-items-center no-gutters">
+                                            <div class="col text-center me-2">
+                                                <h6 class="mb-0">3位</h6>
+                                            </div>
+                                            <div class="col text-center me-2">
+                                                <h6 class="mb-0"><strong>mh</strong></h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
                             <div class="card shadow mb-4">
                                 <form @submit.prevent="addTodoFromPage">
                                     <div class="card-header py-3">
@@ -160,9 +201,9 @@
                                     <button type="submit" class=" col-6 offset-3 btn btn-primary btn-block">TODOを追加する</button>
                                 </form>
                             </div>
-                            <div class="card shadow mb-4" style="width: 504.667px;height: 301.667px;">
+                            <div class="card shadow mb-4" >
                                 <div class="card-header py-3">
-                                    <h6 class="text-primary fw-bold m-0">Menber</h6>
+                                    <h6 class="text-primary fw-bold m-0">Member</h6>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
