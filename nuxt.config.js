@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'TodoRannking',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
@@ -14,13 +14,20 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    link: [{ href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css', rel: 'stylesheet', integrity: 'sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC', crossorigin:'anonymous'}],
-
+    link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css' }],
+    link: [{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.12.0/css/all.css' }],
+    link: [{ rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }],
+    script: [{ src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', body: true }],
+    script: [
+      { src: 'js/script.min.js', body: true }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/bootstrap/css/bootstrap.min.css',
+    '~/assets/fonts/fontawesome5-overrides.min.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],

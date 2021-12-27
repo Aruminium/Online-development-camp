@@ -1,9 +1,3 @@
 <template>
-  <Tutorial />
+<nuxt-link to="/Room">Room</nuxt-link>
 </template>
-
-<script>
-export default {
-  name: 'IndexPage',
-}
-</script>
